@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Validador con Expresiones Regulares</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Validador de datos con RegEx</h1>
+    <p class="subtitle">Ejemplo práctico de expresiones regulares en JavaScript — Investigación Aplicada 2</p>
+
+    <form id="form" novalidate>
+      <div class="field">
+        <label for="correo">Correo electrónico</label>
+        <input type="text" id="correo" placeholder="ejemplo@dominio.com" autocomplete="off">
+        <span class="hint" id="hint-correo">Formato: usuario@dominio.com</span>
+      </div>
+
+      <div class="field">
+        <label for="telefono">Teléfono (El Salvador)</label>
+        <input type="text" id="telefono" placeholder="7123-4567" autocomplete="off">
+        <span class="hint" id="hint-telefono">8 dígitos, con o sin guion (ej. 7123-4567)</span>
+      </div>
+
+      <div class="field">
+        <label for="clave">Contraseña segura</label>
+        <input type="password" id="clave" placeholder="••••••••" autocomplete="off">
+        <span class="hint" id="hint-clave">Mín. 8 caracteres, mayúscula, minúscula, número y símbolo</span>
+      </div>
+    </form>
+
+    <section class="regex-box">
+      <h2>Expresiones regulares usadas</h2>
+      <code id="codigo-regex"></code>
+    </section>
+
+    <footer>
+      Hecho con <strong>RegExp</strong> de JavaScript · Universidad Don Bosco
+    </footer>
+  </main>
+
+  <script src="js/ejemplo.js"></script>
+</body>
+</html>
